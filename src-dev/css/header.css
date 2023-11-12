@@ -1,0 +1,75 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+header p{
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+header nav{
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100vw;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+.nav--ham{
+    width: 32px;
+}
+
+
+/* sm */
+@media screen and (min-width: 640px) {}
+
+/* md */
+@media screen and (min-width: 768px) {}
+
+/* lg */
+@media screen and (min-width: 1024px) {
+    header nav{
+        padding-bottom: 0em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: static;
+    }
+
+    header nav ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .nav--contacto{
+        display: none;
+    }
+}
+
+
+main{
+    margin-top: 10vh;
+}

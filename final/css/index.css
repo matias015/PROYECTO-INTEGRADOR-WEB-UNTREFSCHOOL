@@ -1,0 +1,259 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main section{
+    padding: 3em 3em;
+}
+
+
+/* SECTION 1 */
+.section-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    
+    width: 100%;
+    height: 60vh;
+    padding: 1em 3em;
+    background-image: linear-gradient(to bottom, #181823, #1b2131, #1a2b3f, #14364d, #00425a);  
+    background-size: cover;
+}
+
+
+
+.section-1 p{
+    text-align: center;
+    font-weight: 200;
+}
+
+.section-1 button{
+    margin-top: 2em;
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+    .section-1{
+        height: 90vh;
+        padding-left: 20vw;
+        align-items: start;
+        background-size: cover;
+    }
+
+    .section-1 h1{
+        font-size: 2em; 
+        text-align: left;
+    }
+
+    .section-1 p{
+        width: 50vw;
+        font-size: 1em; 
+        text-align: left;
+    }
+
+}
+
+
+/* SECCION 2 Y 3*/
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: linear-gradient(to right top, #1f8a70, #007973, #006670, #005468, #00425a); */
+    height: 90vh;
+    text-align: center;
+    gap: 2em;
+}
+
+.section-2 img{
+    border-radius: 10px;
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+   .section-2{
+    align-items: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   }
+
+   .section-2 h2{
+    grid-column-end: span 4;
+   }
+   .section-2 img{
+    width: 30vw;
+    grid-column-end: span 1;
+   }
+   .section-2 p{
+    text-align: left;
+    grid-column-end: span 3;
+   }
+}
+
+
+/* SECCION 4 */
+.section-4{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 h2{
+    margin-bottom: 3em;
+}
+
+.section-4 img{
+    width: 128px;
+}
+
+.section-4--card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    padding: 1em;
+}
+
+
+.section-4--card-container div{
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+
+}
+
+
+/* md */
+@media screen and (min-width: 768px) {
+
+    .section-4{
+        height: 90vh;
+    }
+
+    .section-4--card-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6em;
+        padding: 1em;
+    }
+    
+    
+    .section-4--card-container div{
+        flex-direction: column;
+        max-width: 300px;
+    }
+}
+
+/* SECTION 5 */
+
+.section-5{
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.section-5 img{
+    width: 100%;
+}
+
+.section-5--card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    padding: 01em;
+}
+
+
+.section-5--card-container div{
+    padding: 1em;
+    width: 80vw;
+    background-color: rgb(209, 209, 209);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+}
+
+
+
+/* md */
+@media screen and (min-width: 768px) {  
+
+    .section-5{
+        height: 90vh;
+    }
+
+    .section-5--card-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6em;
+        padding: 1em;
+    }
+    
+    
+    .section-5--card-container div{
+        flex-direction: column;
+        max-width: 300px;
+    }
+}
+
+/* SECTION 6 */
+.section--container{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.section-6 h2{
+    text-align: center;
+}
+
+.redes--container {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.redes--container li{
+    gap: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.redes--container img{
+    width: 32px;
+}
+
+/* md */
+@media screen and (min-width: 768px) {  
+    .section--container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}

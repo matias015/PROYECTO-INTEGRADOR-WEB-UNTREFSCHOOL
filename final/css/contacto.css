@@ -1,0 +1,108 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+form{
+    padding: 1em 2em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap: 1em;
+    border-radius: 16px;
+    width: 90vw;
+}
+
+form h1{
+    text-align: center;
+    grid-column-end: span 4;
+}
+
+form div{
+    grid-column-end: span 4;
+    width: 100%;
+    display: flex;
+    gap: 0.25em;
+    flex-direction: column;
+}
+
+form div input{
+    padding: 0.5em;
+    background-color: transparent;
+    border-radius: 5px;
+    border: solid 1px rgb(135, 135, 135);
+    transition: transform 0.25s;
+}
+
+form div textarea{
+    padding: 0.5em;
+    background-color: transparent;
+    border-radius: 5px;
+    border: solid 1px rgb(135, 135, 135);
+    transition: transform 0.25s;
+}
+
+form div input:focus{
+    transform: scale(1.05,1);
+}
+
+form div textarea:focus{
+    transform: scale(1.05,1);
+}
+
+form div button{
+    width: 30vw;
+    transition: transform 0.25s;
+}
+
+.form--submit--container{
+    display: flex;
+    align-items: center;
+}
+
+form div button:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+/* sm - tablet*/
+@media screen and (min-width: 640px) {
+    form{
+        width: 60vw;
+    }
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+    form{
+        width: 40vw;
+    }
+
+    .form--nombre{
+        grid-column-end: span 2;
+    }
+    .form--apellido{
+        grid-column-end: span 2;
+    }
+
+    .form--submit--container{
+        display: flex;
+        align-items: end;
+    }
+
+    .form--submit--container button{
+        width: 100px;
+    }
+
+    main{
+        padding: 3em 0;
+        height: auto;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1024px) {}
