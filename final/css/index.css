@@ -7,8 +7,6 @@ main section{
     padding: 3em 3em;
 }
 
-
-/* SECTION 1 */
 .section-1{
     display: flex;
     flex-direction: column;
@@ -57,13 +55,16 @@ main section{
 }
 
 
-/* SECCION 2 Y 3*/
+
+
+/* SECTION 2  y 3*/
+
 .section-2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* background-image: linear-gradient(to right top, #1f8a70, #007973, #006670, #005468, #00425a); */
-    height: 90vh;
+    /* height: 90vh; */
     text-align: center;
     gap: 2em;
 }
@@ -95,7 +96,8 @@ main section{
 }
 
 
-/* SECCION 4 */
+/* SECTION 4 */
+
 .section-4{
 
     display: flex;
@@ -134,6 +136,7 @@ main section{
 }
 
 
+
 /* md */
 @media screen and (min-width: 768px) {
 
@@ -156,6 +159,8 @@ main section{
     }
 }
 
+
+
 /* SECTION 5 */
 
 .section-5{
@@ -170,6 +175,7 @@ main section{
 
 .section-5 img{
     width: 100%;
+    border-radius: 10px;
 }
 
 .section-5--card-container{
@@ -198,7 +204,6 @@ main section{
 
 
 
-/* md */
 @media screen and (min-width: 768px) {  
 
     .section-5{
@@ -216,9 +221,12 @@ main section{
     
     .section-5--card-container div{
         flex-direction: column;
+        justify-content: space-between;
         max-width: 300px;
+        height: 420px;
     }
 }
+
 
 /* SECTION 6 */
 .section--container{
@@ -247,6 +255,7 @@ main section{
 .redes--container img{
     width: 32px;
 }
+
 
 /* md */
 @media screen and (min-width: 768px) {  

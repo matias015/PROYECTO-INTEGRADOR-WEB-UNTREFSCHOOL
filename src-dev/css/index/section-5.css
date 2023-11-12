@@ -10,6 +10,7 @@
 
 .section-5 img{
     width: 100%;
+    border-radius: 10px;
 }
 
 .section-5--card-container{
@@ -59,7 +60,9 @@
     
     .section-5--card-container div{
         flex-direction: column;
+        justify-content: space-between;
         max-width: 300px;
+        height: 420px;
     }
 }
 
