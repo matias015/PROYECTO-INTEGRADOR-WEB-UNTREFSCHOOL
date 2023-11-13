@@ -166,6 +166,7 @@ main section{
 .section-5{
     /* height: 90vh; */
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -180,7 +181,7 @@ main section{
 
 .section-5--card-container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 6em;
@@ -190,13 +191,14 @@ main section{
 
 .section-5--card-container div{
     padding: 1em;
-    width: 80vw;
+    max-width: 300px;
+    height: 420px;
     background-color: rgb(209, 209, 209);
     border-radius: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 1em;
 
@@ -204,65 +206,14 @@ main section{
 
 
 
-@media screen and (min-width: 768px) {  
-
-    .section-5{
-        height: 90vh;
-    }
-
-    .section-5--card-container{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 6em;
-        padding: 1em;
-    }
-    
-    
-    .section-5--card-container div{
-        flex-direction: column;
-        justify-content: space-between;
-        max-width: 300px;
-        height: 420px;
-    }
-}
-
-
-/* SECTION 6 */
-.section--container{
-    padding-top: 2em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.section-6 h2{
-    text-align: center;
-}
-
-.redes--container {
-    padding: 1em 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-.redes--container li{
-    gap: 1em;
-    display: flex;
-    align-items: center;
-}
-
-.redes--container img{
-    width: 32px;
-}
-
+/* sm */
+@media screen and (min-width: 640px) {}
 
 /* md */
 @media screen and (min-width: 768px) {  
-    .section--container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
+
+}
+
+/* lg */
+@media screen and (min-width: 1024px) {}
 }
