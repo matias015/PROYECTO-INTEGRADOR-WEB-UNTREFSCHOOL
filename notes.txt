@@ -1,5 +1,0 @@
-src-dev:
-    Version para desarrollo, mayor modularidad.
-
-final:
-    Version final con menor modularidad para mayor optimizacion.
