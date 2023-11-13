@@ -50,3 +50,29 @@
 
 /* lg */
 @media screen and (min-width: 1024px) {}
+
+
+
+
+
+
+
+
+
+/* ESTILOS PARA CELULARES */
+
+
+/* sm */
+@media screen and (min-width: 640px) {
+    /* CELULARES GRANDES Y TABLETS CHIQUITAS */
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+    /* TABLETS Y ALGUNOS MONITORES CHICOS */
+}
+
+/* lg */
+@media screen and (min-width: 1024px) {
+    /* MONITORES GRANDES Y TELES     */
+}

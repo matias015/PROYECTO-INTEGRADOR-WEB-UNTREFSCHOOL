@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mendez Matias">
+
     <title>Contacto</title>
     <meta name="description" content="Envia un mail a nuestra institucion">
 
@@ -20,6 +22,8 @@
     <link rel="stylesheet" href="css/predefinidos.css">
 
     <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contacto/contacto.css">
 </head>
 
@@ -43,32 +47,34 @@
                 <a href="contacto.html"><button class="bg-naranja  boton-primario">Mensaje</button></a>
             </div>
         </nav>
-        <div class="none md-block">
-            <a href="contacto.html"><button class="bg-naranja boton-primario">Mensaje</button></a>
+        <div class="none lg-block">
+            <a href="contacto.html"><button class="bg-naranja boton-secundario border-naranja naranja">Envia un mail</button></a>
         </div>
         <span id="nav-ham" class="lg-none"><img class="nav--ham" src="icons/Hamburger_icon.svg.png" alt="hamburger"></span>
+    
     </header>
 
     <!-- MAIN -->
     <main>
 
-        <form class="bg-blanco">
+        <form id="contacto" action="https://formsubmit.co/matiasjf015@gmail.com" method="POST" class="bg-blanco">
             <h1>Contactanos</h1>
             <div class="form--nombre">
                 <label for="">Nombre</label>
-                <input placeholder="Gabriel" type="text">
+                <input name="nombre" placeholder="Gabriel" type="text">
             </div>
             <div class="form--apellido">
                 <label for="">Apellido</label>
-                <input placeholder="Rodriguez" type="text">
+                <input name="apellido" placeholder="Rodriguez" type="text">
             </div>
+            <input type="hidden" name="_next" value="https://matias015.github.io/tp-integrador-front-end/contacto.html">
             <div>
-                <label for="">Email</label>
-                <input placeholder="ejemplo@gmail.com" type="text">
+                <label  for="email">Email</label>
+                <input id="email-input" name="email" oninput="validarEmail(this)" placeholder="ejemplo@gmail.com" type="text">
             </div>
             <div>
                 <label for="">Tu mensaje</label>
-                <textarea name="" id="" cols="30" rows="6"></textarea>
+                <textarea name="mensaje" id="" cols="30" rows="6"></textarea>
             </div>
             <div class="form--submit--container">
                 <button class="boton-primario bg-verde blanco">Enviar</button>
@@ -112,6 +118,7 @@
 
    
     <script src="js/header-nav-show.js"></script>
+    <script src="js/validate-form.js"></script>
 
 </body>
 </html>
