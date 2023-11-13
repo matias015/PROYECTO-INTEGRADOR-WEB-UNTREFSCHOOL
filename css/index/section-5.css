@@ -27,7 +27,7 @@
 .section-5--card-container div{
     padding: 1em;
     max-width: 300px;
-    height: 420px;
+    /* height: 420px; */
     background-color: rgb(209, 209, 209);
     border-radius: 10px;
     text-align: center;
@@ -46,7 +46,9 @@
 
 /* md */
 @media screen and (min-width: 768px) {  
-
+    .section-5--card-container div{
+        height: 420px;
+    }
 }
 
 /* lg */
