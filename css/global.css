@@ -1,0 +1,256 @@
+/* ----- RESETS ----- */
+
+*{
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    outline: none;
+    border: none;
+    color: inherit;
+  }
+  
+  body{
+    overflow-y: scroll;
+  }
+  
+  /* FUENTES */
+  
+  html{
+    font-family: 'poppins';
+  }
+  
+  
+  /* ----- POR TAG ----- */
+  button{
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.25s;
+    white-space: nowrap;
+  }
+  
+  button:hover{
+    transform: scale(1.1);
+  }
+  nav ul li:hover{
+    transform: scale(1.1);
+  }
+  nav ul li{
+    cursor: pointer;
+    transition: transform 0.25s;
+  }
+  
+  /* CLASES */
+  
+  .none{display: none;}
+  .block{display: block;}
+  
+  /* sm */
+  @media screen and (min-width: 640px) {
+    .sm-none{display: none;}
+    .sm-block{display: block;}
+  }
+  
+  /* md */
+  @media screen and (min-width: 768px) {
+    .md-none{display: none;}
+    .md-block{display: block;}
+  }
+  
+  /* lg */
+  @media screen and (min-width: 1024px) {
+    .lg-none{display: none;}
+    .lg-block{display: block;}
+  }
+  
+
+  /* ----- COLORES ----- */
+.bg-naranja{background-color: #FC7300} 
+.naranja{color: #FC7300;}
+.border-naranja{border-color: #FC7300;}
+
+.bg-azul{background-color: #00425A;}
+.azul{color: #00425A;}
+.border-azul{border-color: #00425A;}
+
+.bg-verde{background-color: #1F8A70;}
+.verde{color: #1F8A70;}
+.border-verde{border-color: #1F8A70;}
+
+.bg-negro{background-color: #181823;}
+.negro{color: #181823;}
+.border-negro{border-color: #181823;}
+
+.bg-blanco{background-color: #EFF5F5;}
+.blanco{color: #EFF5F5;}
+.border-blanco{border-color: #EFF5F5;}
+
+/* ----- OTROS ----- */
+
+.boton-primario{
+    padding: 0.75em 1em;
+}
+
+.boton-secundario{
+    padding: 0.75em 1em;
+    border-style: solid;
+    border-width: 2px;
+    background-color: transparent;
+}
+
+
+
+
+
+
+  /* HEADER */
+  
+
+  header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+header p{
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+header nav{
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100vw;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+.nav--ham{
+    width: 32px;
+}
+
+
+/* lg */
+@media screen and (min-width: 1024px) {
+    header nav{
+        padding-bottom: 0em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: static;
+    }
+
+    header nav ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .nav--contacto{
+        display: none;
+    }
+}
+
+
+main{
+    margin-top: 10vh;
+}
+
+
+  /* FOOTER */
+
+  footer{
+    padding: 1em;
+    background-image: linear-gradient(to bottom, #181823, #1b2131, #1a2b3f, #14364d, #00425a); 
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+    align-items: center; 
+}
+
+footer .redes--container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+footer .redes--container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes--container ul li{
+    gap: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    width: 32px;
+}
+
+footer iframe{
+    width: 256px;
+    height: 256px;
+}
+
+
+.mapa--container{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contacto--container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* md */
+@media screen and (min-width: 768px) {  
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .redes--container{
+        align-items: start;
+    }
+
+    footer .redes--container ul{
+        align-items: start;
+    }
+}
